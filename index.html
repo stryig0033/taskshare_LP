@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="タスク共有アプリのランディングページ" />
   <meta name="author" content="Your Company" />
-  <title>TaskShare - タスク共有アプリ</title>
+  <title>TaskShare - 家族やパートナーとの共有型タスク管理アプリ</title>
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <!-- Custom Google font-->
@@ -59,37 +59,22 @@
             <!-- Header text content-->
             <div class="text-center text-xxl-start">
               <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                <div class="text-uppercase">チームコラボ &middot; タスク管理 &middot; 生産性向上</div>
+                <div class="text-uppercase">家事・育児 &middot; 日常タスク &middot; 共有管理</div>
               </div>
-              <div class="fs-3 fw-light text-muted">あなたのチームを加速させる</div>
-              <h1 class="display-3 fw-bolder mb-5">
-                <span class="text-gradient d-inline">最強のタスク共有アプリ</span>
+              <div class="fs-3 fw-light text-muted">家族やパートナーと一緒に</div>
+              <h1 class="display-5 fw-bolder mb-5">
+                <span class="text-gradient d-inline">共有型タスク管理アプリ</span>
               </h1>
 
-              <!-- 事前登録フォーム (Input Group) -->
+              <!-- 事前登録ボタン（下部フォームへ移動） -->
               <h4 class="fw-bolder text-primary mb-3">事前登録でずーっと50%OFF！</h4>
-              <form class="input-group mb-3" style="max-width: 500px;">
-                <input
-                  class="form-control form-control-lg"
-                  type="email"
-                  placeholder="メールアドレスを入力"
-                  aria-label="Email address"
-                />
-                <button class="btn btn-primary btn-lg" type="submit">
-                  事前登録する
-                </button>
-              </form>
+              <button
+                class="btn btn-primary btn-lg"
+                onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+              >
+                事前登録する
+              </button>
             </div>
-          </div>
-
-          <!-- スマホの画像を配置 -->
-          <div class="col-xxl-7 d-flex justify-content-center mt-5 mt-xxl-0">
-            <img
-              src="assets/smartphone.png"
-              alt="スマホのイメージ"
-              class="img-fluid"
-              style="max-height: 500px;"
-            />
           </div>
         </div>
       </div>
@@ -105,55 +90,43 @@
                 <span class="text-gradient d-inline">TaskShareの特徴</span>
               </h2>
               <p class="lead fw-light mb-4">
-                共有タスクやコミュニケーションを1つのアプリで完結。チームの生産性を爆上げします。
+                毎日の洗濯・掃除・お迎え・ゴミ出し・公共料金の支払いなど<br/>
+                <strong>「定期的にだれかがやらないといけない」</strong>タスクを共有管理して効率分担＆負担を見える化。
               </p>
             </div>
+
             <!-- 具体的特徴の例 -->
             <div class="row gx-5">
               <div class="col-md-4 mb-4">
                 <div class="h-100 p-3 border rounded-3">
-                  <h5 class="fw-bolder mb-2">リアルタイムコラボ</h5>
+                  <h5 class="fw-bolder mb-2">リアルタイム共有</h5>
                   <p class="mb-0">
-                    タスクの変更が即時に共有されるので、メンバー全員が常に最新情報を把握できます。
+                    タスクの変更や完了が即時に反映されるから、パートナー同士で
+                    「やった・やってない」の確認がスムーズ。
                   </p>
                 </div>
               </div>
               <div class="col-md-4 mb-4">
                 <div class="h-100 p-3 border rounded-3">
-                  <h5 class="fw-bolder mb-2">プロジェクト管理</h5>
+                  <h5 class="fw-bolder mb-2">カテゴリ分類 & 定期通知</h5>
                   <p class="mb-0">
-                    タスクをプロジェクトやカテゴリーごとに分類し、進捗をわかりやすくビジュアル化。
+                    「掃除」「洗濯」「買い物リスト」「家計管理」など細かく分類して
+                    定期的にリマインド。やり忘れを防ぎます。
                   </p>
                 </div>
               </div>
               <div class="col-md-4 mb-4">
                 <div class="h-100 p-3 border rounded-3">
-                  <h5 class="fw-bolder mb-2">多彩な通知機能</h5>
+                  <h5 class="fw-bolder mb-2">家事参加率を可視化</h5>
                   <p class="mb-0">
-                    期限や担当変更などのアクティビティをリアルタイム通知。抜け漏れを防止します。
+                    どちらがどのくらいタスクを片付けたかを比率で表示。
+                    家事の偏りを見える化し、フェアな分担を実現。
                   </p>
                 </div>
               </div>
             </div>
 
-            <!-- アプリの説明の下にも事前登録フォームを追加（同じ高さにする） -->
-            <div class="text-center my-5">
-              <h4 class="fw-bolder text-primary mb-3">事前登録でずーっと50%OFF！</h4>
-              <form
-                class="input-group"
-                style="max-width: 500px; margin: 0 auto;"  <!-- 中央寄せ -->
-              >
-                <input
-                  class="form-control form-control-lg"
-                  type="email"
-                  placeholder="メールアドレスを入力"
-                  aria-label="Email address"
-                />
-                <button class="btn btn-primary btn-lg" type="submit">
-                  事前登録する
-                </button>
-              </form>
-            </div>
+            <!-- ※ 上部でボタンに変更したため、ここにはフォームを置かない -->
           </div>
         </div>
       </div>
@@ -169,7 +142,7 @@
                 <span class="text-gradient d-inline">料金プラン</span>
               </h2>
               <p class="lead fw-light mb-4">
-                個人利用から小規模チームまで、ニーズに合わせて選べるプランをご用意しています。
+                個人利用から少人数グループまで、必要に合わせて選べるプランをご用意しています。
               </p>
             </div>
             <!-- プランを2つに絞る -->
@@ -183,7 +156,7 @@
                     <ul class="list-unstyled mb-4">
                       <li>個人利用向け</li>
                       <li>タスク数: 無制限</li>
-                      <li>チームメンバー: 1名</li>
+                      <li>メンバー: 1人</li>
                     </ul>
                     <!-- ボタンをモーダル表示に変更 -->
                     <button
@@ -203,10 +176,10 @@
                     <h5 class="card-title fw-bolder">スタンダード</h5>
                     <h6 class="card-price">¥1,000 <span class="text-muted fw-light">/月</span></h6>
                     <ul class="list-unstyled mb-4">
-                      <li>小規模チーム向け</li>
+                      <li>家族・パートナーとの利用向け</li>
                       <li>タスク数: 無制限</li>
-                      <li>チームメンバー: 5名</li>
-                      <li>チャット機能</li>
+                      <li>メンバー: 5人まで</li>
+                      <li>家事参加率の可視化</li>
                     </ul>
                     <!-- ボタンをモーダル表示に変更 -->
                     <button
@@ -241,18 +214,16 @@
                     ></button>
                   </div>
                   <div class="modal-body">
-                    <p>
-                      フリープランでは以下の機能が利用できます:
-                    </p>
+                    <p>フリープランでは以下の機能が利用できます:</p>
                     <ul>
                       <li>タスクの追加・編集・削除</li>
-                      <li>タスク共有(1名まで)</li>
-                      <li>無制限のプロジェクト作成</li>
+                      <li>1人での利用（共有機能は制限）</li>
+                      <li>無制限のカテゴリ作成</li>
                       <li>基本的な通知機能</li>
                     </ul>
                     <p>
                       <strong>こんな方におすすめ:</strong><br />
-                      個人でタスク管理を始めたい方、シンプルに使いたい方
+                      一人暮らし・個人での家事管理を始めたい方など
                     </p>
                   </div>
                   <div class="modal-footer">
@@ -288,19 +259,17 @@
                     ></button>
                   </div>
                   <div class="modal-body">
-                    <p>
-                      スタンダードプランでは以下の機能が利用できます:
-                    </p>
+                    <p>スタンダードプランでは以下の機能が利用できます:</p>
                     <ul>
-                      <li>全てのフリープラン機能</li>
-                      <li>最大5名までのチームコラボレーション</li>
-                      <li>リアルタイムチャット機能</li>
-                      <li>プロジェクト管理の拡張機能</li>
-                      <li>高度な通知設定</li>
+                      <li>フリープランの全機能</li>
+                      <li>最大5名までのタスク共有</li>
+                      <li>家事参加率の比率表示</li>
+                      <li>高度な通知設定（定期リマインドなど）</li>
+                      <li>リアルタイム同期（複数端末で常に最新）</li>
                     </ul>
                     <p>
                       <strong>こんな方におすすめ:</strong><br />
-                      小規模チームでしっかりタスク管理を行いたい方、コミュニケーション機能が必要な方
+                      ご夫婦や家族、同居人との家事・生活タスクを効率的に管理したい方
                     </p>
                   </div>
                   <div class="modal-footer">
@@ -321,22 +290,23 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section (事前登録/お問い合わせフォーム) -->
     <section id="contact" class="py-5">
       <div class="container px-5">
         <div class="row gx-5 justify-content-center">
           <div class="col-xxl-8">
             <div class="text-center mb-5">
-              <h2 class="display-5 fw-bolder">お問い合わせ</h2>
-              <p class="lead fw-light mb-4">ご質問やご要望など、お気軽にご連絡ください。</p>
+              <h2 class="display-5 fw-bolder">事前登録 / お問い合わせ</h2>
+              <p class="lead fw-light mb-4">ご質問やご要望など、お気軽にお送りください。</p>
             </div>
-            <!-- シンプルなお問い合わせフォームの例 -->
-            <form>
+            <!-- 下部フォームを Formspree に接続する例 -->
+            <form action="https://formspree.io/f/mrbelpbj" method="POST">
               <div class="mb-3">
                 <label class="form-label" for="name">お名前</label>
                 <input
                   class="form-control"
                   id="name"
+                  name="name"
                   type="text"
                   placeholder="お名前を入力"
                 />
@@ -346,15 +316,17 @@
                 <input
                   class="form-control"
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="メールアドレスを入力"
                 />
               </div>
               <div class="mb-3">
-                <label class="form-label" for="message">お問い合わせ内容</label>
+                <label class="form-label" for="message">ご意見・ご要望</label>
                 <textarea
                   class="form-control"
                   id="message"
+                  name="message"
                   rows="4"
                   placeholder="ご自由に入力ください"
                 ></textarea>
@@ -394,5 +366,40 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
+
+  <!-- formspree Formbuttonのコード（画面右下にフォームボタンが表示されます） -->
+  <!-- Read the Formbutton docs at formspree.io/formbutton/docs -->
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {
+      action: "https://formspree.io/f/mrbelpbj",
+      title: "How can we help?",
+      fields: [
+        { 
+          type: "email", 
+          label: "Email:", 
+          name: "email",
+          required: true,
+          placeholder: "[email protected]"
+        },
+        {
+          type: "textarea",
+          label: "Message:",
+          name: "message",
+          placeholder: "What's on your mind?",
+        },
+        { type: "submit" }
+      ],
+      styles: {
+        title: {
+          backgroundColor: "gray"
+        },
+        button: {
+          backgroundColor: "gray"
+        }
+      }
+    });
+  </script>
 </body>
 </html>
