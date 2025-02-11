@@ -80,6 +80,69 @@
       </div>
     </header>
 
+    <!-- ▼ ここから新規追加: アプリ画面スライド ▼ -->
+    <section id="screens" class="pb-5">
+      <div class="container px-5">
+        <div
+          id="appScreensCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="2200"
+        >
+        <h4 class="fw-bolder text-primary text-center mb-5">開発中のアプリ画面</h4>
+        <div class="carousel-inner">
+          <!-- 1枚目 -->
+          <div class="carousel-item active">
+            <img
+              src="assets/1.png"
+              alt="アプリ画面1"
+              class="d-block mx-auto rounded"
+              style="max-width: 200px; height: auto;"
+            />
+          </div>
+          <!-- 2枚目 -->
+          <div class="carousel-item">
+            <img
+              src="assets/2.png"
+              alt="アプリ画面2"
+              class="d-block mx-auto rounded"
+              style="max-width: 200px; height: auto;"
+            />
+          </div>
+          <!-- 3枚目 -->
+          <div class="carousel-item">
+            <img
+              src="assets/3.png"
+              alt="アプリ画面3"
+              class="d-block mx-auto rounded"
+              style="max-width: 200px; height: auto;"
+            />
+          </div>
+        </div>
+          <!-- 前へ／次へボタン -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#appScreensCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">前へ</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#appScreensCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">次へ</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- ▲ ここまでアプリ画面スライド ▲ -->
+
     <!-- Features Section (アプリの説明)-->
     <section id="features" class="bg-light py-5">
       <div class="container px-5">
@@ -90,205 +153,255 @@
                 <span class="text-gradient d-inline">TaskShareの特徴</span>
               </h2>
               <p class="lead fw-light mb-4">
-                毎日の洗濯・掃除・お迎え・ゴミ出し・公共料金の支払いなど<br/>
-                <strong>「定期的にだれかがやらないといけない」</strong>タスクを共有管理して効率分担＆負担を見える化
+                毎日の洗濯・掃除・お迎え・ゴミ出し・買い物など…<br/>
+                <strong>「定期的に誰かがやらなきゃいけない」</strong>家庭内や同居人とのタスクを
+                かんたん共有＆効率的に分担できるアプリです。
               </p>
             </div>
 
-            <!-- 具体的特徴の例 -->
-            <div class="row gx-5">
-              <div class="col-md-4 mb-4">
-                <div class="h-100 p-3 border rounded-3">
-                  <h5 class="fw-bolder mb-2">リアルタイム共有</h5>
-                  <p class="mb-0">
-                    タスクの変更や完了が即時に反映されるから、家族やパートナー同士で
-                    「やった・やってない」の確認がスムーズ。
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4 mb-4">
-                <div class="h-100 p-3 border rounded-3">
-                  <h5 class="fw-bolder mb-2">カテゴリ分類 & 定期通知</h5>
-                  <p class="mb-0">
-                    「掃除」「洗濯」「買い物リスト」「家計管理」など細かく分類して
-                    定期的にリマインド。やり忘れを防ぎます。
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4 mb-4">
-                <div class="h-100 p-3 border rounded-3">
-                  <h5 class="fw-bolder mb-2">家事参加率を可視化</h5>
-                  <p class="mb-0">
-                    だれがどのくらいタスクを片付けたかを比率で表示。
-                    家事の偏りを見える化し、フェアな分担を実現。
-                  </p>
-                </div>
-              </div>
-            </div>
+            <!-- ここにFeaturesのカードなど -->
+            <!-- ...省略（既存のFeaturesセクション）... -->
 
-            <!-- ※ 上部でボタンに変更したため、ここにはフォームを置かない -->
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-5">
-      <div class="container px-5">
-        <div class="row gx-5 justify-content-center">
-          <div class="col-xxl-8">
-            <div class="text-center my-5">
-              <h2 class="display-5 fw-bolder">
-                <span class="text-gradient d-inline">料金プラン</span>
-              </h2>
-              <p class="lead fw-light mb-4">
-                個人利用から少人数グループまで、必要に合わせて選べるプランをご用意しています。
-              </p>
-            </div>
-            <!-- プランを2つに絞る -->
-            <div class="row gx-5 mb-5">
-              <!-- フリー -->
-              <div class="col-md-6 mb-4">
-                <div class="card h-100 text-center border-0 shadow">
-                  <div class="card-body p-4">
-                    <h5 class="card-title fw-bolder">フリー</h5>
-                    <h6 class="card-price">¥0 <span class="text-muted fw-light">/月</span></h6>
-                    <ul class="list-unstyled mb-4">
-                      <li>少人数利用向け</li>
-                      <li>タスク数: 5</li>
-                      <li>メンバー: ~3人</li>
-                    </ul>
-                    <!-- ボタンをモーダル表示に変更 -->
-                    <button
-                      class="btn btn-outline-primary w-100"
-                      data-bs-toggle="modal"
-                      data-bs-target="#freePlanModal"
-                    >
-                      詳細を見る
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- スタンダード -->
-              <div class="col-md-6 mb-4">
-                <div class="card h-100 text-center border-0 shadow">
-                  <div class="card-body p-4">
-                    <h5 class="card-title fw-bolder">スタンダード</h5>
-                    <h6 class="card-price">¥500 <span class="text-muted fw-light">/月</span></h6>
-                    <ul class="list-unstyled mb-4">
-                      <li>家族・パートナーとの利用向け</li>
-                      <li>タスク数: 無制限</li>
-                      <li>メンバー: 5人まで</li>
-                      <li>家事参加率の可視化</li>
-                    </ul>
-                    <!-- ボタンをモーダル表示に変更 -->
-                    <button
-                      class="btn btn-primary w-100"
-                      data-bs-toggle="modal"
-                      data-bs-target="#standardPlanModal"
-                    >
-                      詳細を見る
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <!-- 新しいメイン機能紹介：2行×3列 or リスト形式 -->
+    <div class="row gx-5 gy-4">
+      <!-- 個人用タスク管理 -->
+      <div class="col-md-4">
+        <div class="h-100 p-3 border rounded-3">
+          <h5 class="fw-bolder mb-2"><i class="bi bi-person-check me-2"></i>個人用タスク管理</h5>
+          <p class="mb-0">
+            自分専用のタスクや予定を一元管理。<br/>
+            仕事やプライベートのタスクもまとめて管理して、日々のやることを見える化します。
+          </p>
+        </div>
+      </div>
 
-            <!-- モーダル: フリープラン -->
-            <div
-              class="modal fade"
-              id="freePlanModal"
-              tabindex="-1"
-              aria-labelledby="freePlanModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 id="freePlanModalLabel" class="modal-title">フリープラン詳細</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="閉じる"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>フリープランでは以下の機能が利用できます:</p>
-                    <ul>
-                      <li>タスクの追加・編集・削除</li>
-                      <li>1人での利用（共有機能は制限）</li>
-                      <li>無制限のカテゴリ作成</li>
-                      <li>基本的な通知機能</li>
-                    </ul>
-                    <p>
-                      <strong>こんな方におすすめ:</strong><br />
-                      一人暮らし・個人での家事管理を始めたい方など
-                    </p>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      閉じる
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <!-- ルーチンタスク管理 -->
+      <div class="col-md-4">
+        <div class="h-100 p-3 border rounded-3">
+          <h5 class="fw-bolder mb-2"><i class="bi bi-arrow-repeat me-2"></i>ルーチンタスク管理</h5>
+          <p class="mb-0">
+            毎週のゴミ出しや洗濯など、<strong>定期的に発生する家事</strong>を自動で生成・リセット。<br/>
+            やり忘れを防ぎ、常に最新の進捗を家族全員と共有できます。
+          </p>
+        </div>
+      </div>
 
-            <!-- モーダル: スタンダードプラン -->
-            <div
-              class="modal fade"
-              id="standardPlanModal"
-              tabindex="-1"
-              aria-labelledby="standardPlanModalLabel"
-              aria-hidden="true"
+      <!-- 買い物リスト共有 -->
+      <div class="col-md-4">
+        <div class="h-100 p-3 border rounded-3">
+          <h5 class="fw-bolder mb-2"><i class="bi bi-cart-check me-2"></i>買い物リスト</h5>
+          <p class="mb-0">
+            食品や日用品のリストを家族と共有。<br/>
+            誰かが購入したらリアルタイムで更新されるので、<strong>重複買いや買い忘れ</strong>を防止できます。
+          </p>
+        </div>
+      </div>
+
+      <!-- 担当者割り当て -->
+      <div class="col-md-4">
+        <div class="h-100 p-3 border rounded-3">
+          <h5 class="fw-bolder mb-2"><i class="bi bi-people me-2"></i>担当者設定 & 引き受けボタン</h5>
+          <p class="mb-0">
+            タスクごとに担当者を割り当てて、<strong>「誰が何をやるか」</strong>を明確化。<br/>
+            未定のタスクは「引き受ける」ボタンで誰かが担当するとすぐ全員に共有されます。
+          </p>
+        </div>
+      </div>
+
+      <!-- 写真共有 -->
+      <div class="col-md-4">
+        <div class="h-100 p-3 border rounded-3">
+          <h5 class="fw-bolder mb-2"><i class="bi bi-camera me-2"></i>写真でタスク共有</h5>
+          <p class="mb-0">
+            料理の出来上がりや掃除前後の状態、買ってほしい商品の写真などをタスクに添付可能。<br/>
+            <strong>視覚的に内容を伝えられる</strong>から、家族間でのミスコミュニケーションを削減します。
+          </p>
+        </div>
+      </div>
+
+      <!-- 家事参加率の可視化 -->
+      <div class="col-md-4">
+        <div class="h-100 p-3 border rounded-3">
+          <h5 class="fw-bolder mb-2"><i class="bi bi-bar-chart-fill me-2"></i>負担の偏りを見える化</h5>
+          <p class="mb-0">
+            誰がどれだけタスクをこなしたかを色分けやグラフで可視化。<br/>
+            家事の負担が一方に偏らないよう、<strong>平等な分担</strong>に役立ちます。
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /row -->
+  </div>
+</div>
+</div>
+</section>
+<!-- /Features Section -->
+
+<!-- Pricing Section -->
+<section id="pricing" class="py-5">
+<div class="container px-5">
+<div class="row gx-5 justify-content-center">
+  <div class="col-xxl-8">
+    <div class="text-center my-5">
+      <h2 class="display-5 fw-bolder">
+        <span class="text-gradient d-inline">料金プラン</span>
+      </h2>
+      <p class="lead fw-light mb-4">
+        個人利用から少人数グループまで、必要に合わせて選べるプランをご用意しています。
+      </p>
+    </div>
+    <!-- プランを2つに絞る -->
+    <div class="row gx-5 mb-5">
+      <!-- フリー -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 text-center border-0 shadow">
+          <div class="card-body p-4">
+            <h5 class="card-title fw-bolder">フリー</h5>
+            <h6 class="card-price">¥0 <span class="text-muted fw-light">/月</span></h6>
+            <ul class="list-unstyled mb-4">
+              <li>少人数利用向け</li>
+              <li>タスク数: 5</li>
+              <li>メンバー: ~3人</li>
+            </ul>
+            <!-- ボタンをモーダル表示に変更 -->
+            <button
+              class="btn btn-outline-primary w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#freePlanModal"
             >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 id="standardPlanModalLabel" class="modal-title">スタンダードプラン詳細</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="閉じる"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>スタンダードプランでは以下の機能が利用できます:</p>
-                    <ul>
-                      <li>フリープランの全機能</li>
-                      <li>最大5名までのタスク共有</li>
-                      <li>家事参加率の比率表示</li>
-                      <li>高度な通知設定（定期リマインドなど）</li>
-                      <li>リアルタイム同期（複数端末で常に最新）</li>
-                    </ul>
-                    <p>
-                      <strong>こんな方におすすめ:</strong><br />
-                      ご夫婦や家族、同居人との家事・生活タスクを効率的に管理したい方
-                    </p>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      閉じる
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /モーダル -->
+              詳細を見る
+            </button>
           </div>
         </div>
       </div>
-    </section>
+      <!-- スタンダード -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 text-center border-0 shadow">
+          <div class="card-body p-4">
+            <h5 class="card-title fw-bolder">スタンダード</h5>
+            <h6 class="card-price">¥500 <span class="text-muted fw-light">/月</span></h6>
+            <ul class="list-unstyled mb-4">
+              <li>家族・パートナーとの利用向け</li>
+              <li>タスク数: 無制限</li>
+              <li>メンバー: 5人まで</li>
+              <li>家事参加率の可視化</li>
+            </ul>
+            <!-- ボタンをモーダル表示に変更 -->
+            <button
+              class="btn btn-primary w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#standardPlanModal"
+            >
+              詳細を見る
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- モーダル: フリープラン -->
+    <div
+      class="modal fade"
+      id="freePlanModal"
+      tabindex="-1"
+      aria-labelledby="freePlanModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="freePlanModalLabel" class="modal-title">フリープラン詳細</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="閉じる"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>フリープランでは以下の機能が利用できます:</p>
+            <ul>
+              <li>個人用タスクの追加・編集・削除</li>
+              <li>基本的な通知機能</li>
+              <li>カテゴリ作成（制限あり）</li>
+              <li>メンバー3人までの共有機能（タスク数上限あり）</li>
+            </ul>
+            <p>
+              <strong>こんな方におすすめ:</strong><br />
+              一人暮らし・個人での家事管理、またはお試しで使ってみたい方
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              閉じる
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- モーダル: スタンダードプラン -->
+    <div
+      class="modal fade"
+      id="standardPlanModal"
+      tabindex="-1"
+      aria-labelledby="standardPlanModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="standardPlanModalLabel" class="modal-title">スタンダードプラン詳細</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="閉じる"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>スタンダードプランでは以下の機能が利用できます:</p>
+            <ul>
+              <li>フリープランの全機能</li>
+              <li>タスク数無制限・5名までの共有</li>
+              <li>ルーチンタスク管理・買い物リスト</li>
+              <li>担当者割り当て・写真共有</li>
+              <li>家事参加率の比率表示</li>
+              <li>定期リマインドや高度な通知設定</li>
+              <li>リアルタイム同期（複数端末で常に最新）</li>
+            </ul>
+            <p>
+              <strong>こんな方におすすめ:</strong><br />
+              ご夫婦や家族、同居人との家事・生活タスクを効率的に管理し、負担を見える化したい方
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              閉じる
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /モーダル -->
+  </div>
+</div>
+</div>
+</section>
+
 
     <!-- Contact Section (事前登録/お問い合わせフォーム) -->
     <section id="contact" class="py-5">
@@ -300,7 +413,17 @@
               <p class="lead fw-light mb-4">こちらにメールアドレスを登録しておくと、有料プランが常に50%OFFとなります。</p>
               <p class="lead fw-light mb-4">ご質問やご要望など、お気軽にお送りください。</p>
             </div>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddHKQDz2sjbAByQyvvRhWZtz_MqEasK2e_klCNllcG5b_0JA/viewform?embedded=true" width="640" height="1367" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSddHKQDz2sjbAByQyvvRhWZtz_MqEasK2e_klCNllcG5b_0JA/viewform?embedded=true"
+              width="640"
+              height="1367"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              class="mx-auto d-block"
+            >
+              読み込んでいます…
+            </iframe>
           </div>
         </div>
       </div>
@@ -330,8 +453,7 @@
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
 
-  <!-- formspree Formbuttonのコード（画面右下にフォームボタンが表示されます） -->
-  <!-- Read the Formbutton docs at formspree.io/formbutton/docs -->
+  <!-- formspree Formbuttonのコード -->
   <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
   <script>
     window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
